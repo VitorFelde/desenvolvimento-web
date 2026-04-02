@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        label {
+            display: block;
+            display: grid;
+            grid-template-columns: 70px max-content;
+            margin: 2px;
+            font-size: small;
+            padding: 5px;
+        }
+
+        form {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            width: 24%;
+            background-color: darkcyan;
+        }
+
+        div {
+            margin-left: 5px;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+
+        <label>
+            <span>User:</span><!--Label para o texto que vai estar escrito para o usuário-->
+            <input type="text" name="user" placeholder="Digite seu nome de usuário:" required />
+            <!--required para tornar um campo obrigatório-->
+        </label>
+
+        <label>
+            <span>Senha:</span>
+            <input type="password" name="senha" placeholder="Digite sua senha:" required />
+            <!--Usamos placeholder para a mensagem que vai ficar dentro da box que o usuário vai digitar-->
+            <!--Para a informação não aparecer usamos o type password-->
+        </label>
+
+        <label>
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+        </label>
+
+        <!--Usamos o name como uma variável, é importante utilizar em formulários grandes!-->
+
+        <label>
+            Data de nascimento:
+            <input type="date" name="nascimento" placeholder="Digite sua data de nascimento" />
+        </label>
+
+        <label>
+            <span>Peso (KG):</span>
+            <input type="number" name="peso" placeholder="Digite seu peso" />
+        </label>
+
+        <label>
+            <span>Altura em centímetros:</span>
+            <input type="number" name="altura" placeholder="Digite sua altura" />
+            <!--Para a informação não aparecer usamos o type password-->
+            <button>Salvar</button>
+        </label>
+
+        <label>
+            <span>Qualidade:</span>
+
+            <div>
+                <span>Bom</span>
+                <input type="radio" name="qualidade" value="1">
+                <span>Médio</span>
+                <input type="radio" name="qualidade" value="2">
+                <span>Ruim</span>
+                <input type="radio" name="qualidade" value="3">
+            </div>
+
+            <!--Type radio para ser a bolinha que pode ser escolhida apenas uma, caso fosse 
+            a checkbox, o usuário poderia escolher mais de uma opção como o exemplo abaixo-->
+        </label>
+
+        <label>
+            <span>Idiomas</span>
+            <div>
+                <input type="checkbox" name="idiomas" value="1">
+                <span>Inglês</span>
+
+                <input type="checkbox" name="idiomas" value="2">
+                <span>Espanhol</span>
+            </div>
+        </label>
+
+    </form>
+
+
+
+</body>
+
+</html>
