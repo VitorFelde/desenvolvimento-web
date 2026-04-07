@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+
+<style>
+    .tabela {display: grid;
+    grid-template-columns:repeat(2, 75px);
+    border-collapse: collapse;
+    border: 0;}
+    
+    
+    .titulo {background-color: #6E6E6E;}
+    
+    div {border: 1px solid black;}
+
+    .consumo {background-color:#98FF98;
+    padding: 2px;}
+
+    .carro {background-color: #CCFFFF;
+    padding: 2px;}
+</style>
+
+</head>
+
+
+
+<body>
+    
+    <div class="tabela">
+        <div class="titulo">Modelo</div>
+        <div class="titulo">Consumo</div>
+
+        <div class="carro">Clio</div>
+        <div class="consumo">15,8 km/l</div>
+
+        <div class="carro">Palio Fire</div>
+        <div class="consumo">15,4 km/l</div>
+
+        <div class="carro">Novo Uno</div>
+        <div class="consumo">15,2 km/l</div>
+
+        <div class="carro">Up</div>
+        <div class="consumo">14,3 km/l</div>
+    </div>
+
+
+
+</body>
+</html>
