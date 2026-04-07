@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas disponíveis</title>
+
+    <style>
+        .geral {
+            display: grid;
+            grid-template-columns: 180px 180px;
+            border: 2px solid #ccc;
+            width: max-content;
+            padding: 5px;
+        }
+
+        .titulo {
+            grid-column: span 2;
+            height: 70%;
+        }
+
+        .bordadascasas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid #ccc;
+            width: auto;
+            grid-column: span 2;
+            gap: 5px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            height: 150px;
+        }
+
+        .titulo {
+            background-color: #5EFB6E;
+            margin: 5px;
+            margin-right: 0px;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="geral">
+        <div class="titulo">
+            <h2>Casas no centro</h2>
+        </div>
+        <div class="bordadascasas">
+            <div class="casa1">
+                <img src="casa1.jpg" alt="casa1">
+            </div>
+            <div class="casa2">
+                <img src="casa2.jpg" alt="casa2">
+            </div>
+        </div>
+        <div class="titulo">
+            <h2>Casas na vila a</h2>
+        </div>
+        <div class="bordadascasas">
+            <div class="casa1"><img src="casa1.1.jpg" alt="casa1.1">
+            </div>
+            <div class="casa2"><img src="casa2.1.jpg" alt="casa2.1">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

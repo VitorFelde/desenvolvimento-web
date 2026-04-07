@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+
+    <style>
+        .tabela {
+            display: grid; /*transformar em tabela*/
+            grid-template-columns: repeat(2, 90px); /*deixar o espaco entre as linhas padronizado*/
+            border-collapse: collapse; /*fazer com que tenha borda em todos os quadrados da tabela*/
+            border: 0; /*para que o resto da tabela não tenha borda*/
+        }
+
+
+        .titulo {
+            background-color: #f3d57c;
+            grid-column: span 2; /*para que o título ocupe as duas linhas da tabela*/
+            text-align: center; /*centralizar*/
+            padding: 3px; /*adicionar espaçamento interno para ficar mais próximo do exercício*/
+        }
+
+
+        div {
+            border: 1px solid black; /*borda na tabela*/
+        }
+
+
+        .carro {
+            background-color: #ffffff;
+            padding: 4px; /*espaçamento interno*/
+
+        }
+
+        .fonte {
+            grid-column: span 2; /*para que ocupe as duas linhas da tabela*/
+            background-color: #E6e6e6;
+            text-align: center; /*centralizar*/
+            padding: 4px; /*espaçamento interno*/
+        }
+
+        .mu {
+            background-color: #97CBFA;
+            text-align: center; /*centralizar*/
+            padding: 4px; /*espaçamento interno para ficar mais próximo do exercício*/
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div class="tabela">
+        <div class="titulo"><strong>Vendas do 1° Semestre</strong></div>
+
+
+        <div class="mu"><strong>Modelo</strong></div>
+        <div class="mu"><strong>Unidades</strong></div>
+
+        <div class="carro">Palio</div>
+        <div class="carro">585.240</div>
+
+        <div class="carro">Gol</div>
+        <div class="carro">529.894</div>
+
+        <div class="fonte">fonte: agencia Reuters</div>
+
+    </div>
+
+
+
+</body>
+
+</html>
