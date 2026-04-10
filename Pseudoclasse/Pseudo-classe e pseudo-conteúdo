@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+    <style>
+        /*pseudo-classes, tem uma vez os dois pontos:*/
+        li:first-child {
+            color: blue;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        td:nth-child(2n) {
+            background-color: #1151e8;
+        }
+
+        /*adicionar regra apenas nas linhas pares*/
+
+
+        td:nth-child(2n + 1) {
+            background-color: #d91111;
+        }
+
+        /*adicionar regra apenas nas linhas impares*/
+
+        /*pseudo-elementos usam duas vezes os dois pontos ::*/
+
+        p::first-letter {
+            font-size: 80px;
+        }
+
+        p::before {
+            content: "😎";
+        }
+
+        p::after {
+            content: "😎"
+        }
+
+
+
+        /*deixar a primeira letra da regra (<p> nesse caso)
+             com tamanhho maior que as outras (nesse caso)*/
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <h1>Pseudo-classes</h1>
+
+
+    <p>Conseguimos alterar estilos/design sem classes no html!</p>
+
+    <ul>
+        <li>Exemplo1</li>
+        <li>Exemplo2</li>
+        <li>Exemplo3</li>
+    </ul>
+
+    <a href="https://www.youtube.com/">YouTube</a>
+
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+
+    <table>
+        <tr>
+            <td>PR</td>
+            <td>RS</td>
+            <td>SP</td>
+            <td>RJ</td>
+        </tr>
+    </table>
+</body>
+
+</html>
