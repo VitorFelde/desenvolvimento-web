@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        form {
+            background-color: #c4fdb8;
+            border: 2px solid green;
+            width: 400px;
+            padding: 15px;
+        }
+
+        label {
+            display: grid;
+            grid-template-columns: 190px max-content;
+        }
+
+        span {
+            text-align: right;
+            padding-right: 17px;
+            color: navy;
+        }
+
+        .nao {
+            padding: 0px;
+            color: black;
+        }
+
+        button {margin-left:30px;
+        margin-top: 25px;}
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <label>
+            <span>Data de nascimento: </span>
+            <input type="date" name="data">
+        </label>
+
+        <label>
+            <span>Escolaridade:</span>
+            <select name="ensino">
+                <option>Ensino Fundamental</option>
+                <option>Ensino Médio</option>
+                <option>Ensino Superior</option>
+            </select>
+        </label>
+
+        <label>
+            <span>Situação da escolaridade:</span>
+
+            <div> <!--Utilizado div para separar primeiro span do segundo-->
+                <span class="nao">Completo</span>
+                <input type="radio" name="situacao">
+                <span class="nao">Incompleto</span>
+                <input type="radio" name="situacao">
+            </div>
+        </label>
+
+        <label>
+            <span>Nacionalidade:</span>
+            <select name="nacio">
+                <option>Brasil</option>
+                <option>Eua</option>
+                <option>Russia</option>
+                <option>China</option>
+            </select>
+        </label>
+
+        <label>
+            <span>UF onde nasceu:</span>
+            <select name="uf">
+                <option>Paraná</option>
+                <option>Santa Catarina</option>
+                <option>Rio Grande Do Sul</option>
+            </select>
+        </label>
+
+        <button>enviar</button>
+
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>
