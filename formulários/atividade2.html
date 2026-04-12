@@ -6,7 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
+        label {
+            display: grid;
+            grid-template-columns: 150px max-content;
+            text-align: right;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        span {
+            padding-right: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {margin-left: 140px;
+        margin-top: 5px;
+        border-radius: 0%;
+        border: 1px solid gray;
+        padding: 5px;}
     </style>
 </head>
 
@@ -42,9 +59,31 @@
 
         <label>
             <span>Curso</span>
-            <input type="text">
+            <select name="curso">
+                <option>--Selecione--</option>
+                <option>Analise e desenvolvimento</option>
+                <option>Física</option>
+                <option>Matemática</option>
+            </select>
         </label>
+
+        <label>
+            <span>Turno</span>
+            <div>
+                <input type="radio" name="turno">
+                <span>Tarde</span>
+                <input type="radio" name="turno">
+                <span>Noite</span>
+            </div>
+        </label>
+
+        <span>Motivo da matrícula</span>
+        <textarea name="motivo" cols="40" rows="8"></textarea>
+
     </form>
+
+     <button>enviar</button>
+
 </body>
 
 </html>
