@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        label {
+            display: grid;
+            grid-template-columns: 150px max-content;
+            text-align: right;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        span {
+            padding-right: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {margin-left: 140px;
+        margin-top: 5px;
+        border-radius: 0%;
+        border: 1px solid gray;
+        padding: 5px;}
+
+        input:invalid {
+            color: red;
+        }
+
+        input::placeholder {color: black;}
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>
+            <span>Nome</span>
+            <input type="text" name="nome" placeholder="Nome" minlength="3" required>
+        </label>
+
+        <label>
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="user@example.org" required>
+        </label>
+
+        <label>
+            <span>Password</span>
+            <input type="password" name="senha" placeholder="6 caracteres" minlength="6" maxlength="10" required>
+        </label>
+
+        <label>
+            <span>Possui conhecimento?</span>
+
+            <div>
+                <input type="checkbox" name="JavaScript">
+                <span>JavaScript</span>
+                <input type="checkbox" name="HTML">
+                <span>HTML</span>
+                <input type="checkbox" name="CSS">
+                <span>CSS</span>
+            </div>
+        </label>
+
+        <label>
+            <span>Curso</span>
+            <select name="curso">
+                <option>--Selecione--</option>
+                <option>Analise e desenvolvimento</option>
+                <option>Física</option>
+                <option>Matemática</option>
+            </select>
+        </label>
+
+        <label>
+            <span>Turno</span>
+            <div>
+                <input type="radio" name="turno">
+                <span>Tarde</span>
+                <input type="radio" name="turno">
+                <span>Noite</span>
+            </div>
+        </label>
+
+        <span>Motivo da matrícula</span>
+        <textarea name="motivo" cols="40" rows="8"></textarea>
+
+    </form>
+
+     <button>enviar</button>
+
+</body>
+
+</html>
