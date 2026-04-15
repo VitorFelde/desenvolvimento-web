@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1663427929868-3941f957bb36?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhcGVsJTIwZGUlMjBwYXJlZGUlMjB0ZXJyYXxlbnwwfHwwfHx8MA%3D%3D);
+            background-repeat: no-repeat;
+        }
+
+        input,
+        select {
+            border: 3px solid #0c5379;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 30px;
+            margin-left: 15px;
+            padding: 5px;
+        }
+
+        span {
+            color: #73ccbe;
+            text-align: end;
+            align-self: center;
+        }
+
+        form {
+            border: 2px solid #73ccbe;
+            background-color: rgb(240, 248, 255, 0.1);
+            border-radius: 5px; ;
+        }
+
+        label {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 250px 270px 1fr;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            margin: 20px;
+        }
+
+        button {
+            margin-left: 125px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 0;
+            border: 0;
+        }
+
+    
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+
+        <p>Cadastro usuário</p>
+
+        <label>
+            <span>Nome</span>
+            <input type="text" name="nome">
+        </label>
+
+        <label>
+            <span>Email</span>
+            <input type="email" name="email">
+        </label>
+
+        <label>
+            <span>Nascimento</span>
+            <input type="date" name="data">
+        </label>
+
+        <label>
+            <span>Pais</span>
+            <select>
+                <option>Selecione</option>
+                <option>Brasil</option>
+                <option>China</option>
+                <option>Russia</option>
+                <option>Eua</option>
+                <option>Alemanha</option>
+            </select>
+        </label>
+
+        <div>
+            <label>
+                <span>Idade</span>
+                <input type="text" name="idade">
+            </label>
+            <label>
+                <span>DDD</span>
+                <input type="text">
+            </label>
+            <label>
+                <span>Telefone</span>
+                <input type="text" name="tel">
+            </label>
+        </div>
+
+        <button>Adicionar</button>
+
+    </form>
+
+</body>
+
+</html>
