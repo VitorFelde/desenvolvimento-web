@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+
+    <h1>Fala rapeize</h1>
+
+
+    <script> /*tag para criar o JS*/
+        alert("Data e hora: " + new Date().toLocaleString());
+        // new Date() -> É como se o PC olhasse no relógio AGORA e anotasse tudo (dia, mês, ano, hora, segundos).
+        // .toLocaleString() -> Pega essa informação do relógio (que vem toda bagunçada) e "traduz" para o jeito que a gente lê no Brasil (ex: 15/10/2023 14:30).
+        // sem o toLocaleString, a data ficaria em inglês e cheia de códigos estranhos!
+
+        //quem abre e fecha parenteses é função
+
+        let excluir = confirm("Deseja prosseguir para pagina? "); //excluir é uma variavel ja confirm é uma função
+        alert("confirma: " + excluir);  //alert é uma função
+
+        console.log(excluir); //verificar no console do navegador
+        console.log(typeof (excluir)); //verificar o tipo da variavel usando typeof
+
+        document.body.style.backgroundColor = "yellow"; //acessando a body, o style e definindo uma cor para o body
+        //document representa um documento, o documento html, portanto é por isso que fica no fim, para que o documento
+        //html esteja completo.
+
+        if (excluir == true) {
+            alert ("Clash Royale"); //se o excluir for verdadeiro, ou seja, se o usuario clicar em ok, vai aparecer a caixa abaixo
+        }
+
+        else {
+            alert ("Clash of Clans"); //senão aparecera essa
+        }
+
+        //variavel do tipo const, é para um valor que não pode mudar, exemplo pi - 3,1415
+
+    </script>
+
+</body>
+
+</html>
