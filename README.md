@@ -1,1 +1,8 @@
-Atividades de desenvolvimento web (HTML, CSS e JS) do primeiro semestre de 2026.
+# Desenvolvimento Web I - IFPR
+Este repositório contém os exercícios e projetos desenvolvidos durante o 1º semestre do curso de TADS.
+
+## 🚀 Linguagens utilizadas
+* HTML5
+* CSS3 (Flexbox, Grid, Pseudo-classes)
+* JavaScript Básico
+
