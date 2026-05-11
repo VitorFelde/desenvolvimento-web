@@ -3,6 +3,6 @@ Este repositório contém os exercícios e projetos desenvolvidos durante o 1º 
 
 ## 🚀 Linguagens utilizadas
 * HTML5
-* CSS3 (Flexbox, Grid, Pseudo-classes)
-* JavaScript Básico
+* CSS3
+* JavaScript
 
