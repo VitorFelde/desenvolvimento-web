@@ -1,0 +1,15 @@
+div {
+  border: 1px solid black;
+  width: 42%;
+}
+
+p {
+  display: inline-block; /*deixando os elementos lado-lado*/
+  margin: 8px;
+}
+
+#res {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #82ef96;
+}
