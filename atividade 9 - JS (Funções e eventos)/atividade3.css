@@ -1,0 +1,10 @@
+.cor {
+   background-color: #c64947;
+   width: 20px;
+   height: 20px;
+   border: 1px solid gray ;
+   }
+
+div {border: 1px solid gray;
+width: 30%;
+padding: 10px;}
