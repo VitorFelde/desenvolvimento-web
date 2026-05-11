@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 4</title>
+</head>
+<body>
+  <div class = "quadrados">
+    <h2>Opções de cores</h2>
+   
+    <div class = "cor" onmouseover = "mudarCor('#c64947', '.p1')"
+    ></div> <!--quando o mouse passa por cima, ele manda esse bloco para a função la no js, pois estamos usando o onmouseover, que é algo do js, portanto quando o mouse passa por cima, os parametros que foram criados na funcao sao aplicados, a cor, e o .p1, que nesse caso foi a classe criada para o primeiro bloco de texto, logo, quando usamos o queryselector, ele puxa o parametro 'id', que criamos e atribuimos os nomes p1,p2,p3,p4, procuram no html as tags com as classes com os mesmos nomes-->
+    
+     <div class = "cor" onmouseover = "mudarCor('#60b4cc', '.p2')" id = "azul" <!--os seletores: cor e id do js, sendo usados, a cor é o #, e o id é o .p2, que sera o mesmo dos paragrafos que foi criado classse, por isso quando o mouse passa em cima, o paragrafo recebe os valores dos parametros que foram definidos-->
+    </div>
+    
+     <div class = "cor" onmouseover = "mudarCor('#eec52d', '.p3')"
+     id = "amarelo"></div>
+    
+     <div class = "cor" onmouseover = "mudarCor('#69a84f', '.p4')"
+     id = "verde"></div>
+  </div>
+  
+  
+  <div class = "paragrafos">
+          
+<p class = "p1">1- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita soluta asperiores et, quia aperiam necessitatibus facere, inventore repellat quas culpa magnam vitae dicta distinctio quo eum ratione provident consequuntur porro.</p>
+                                 
+<p class = "p2">2- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita soluta asperiores et, quia aperiam necessitatibus facere, inventore repellat quas culpa magnam vitae dicta distinctio quo eum ratione provident consequuntur porro.</p>
+                                
+<p class = "p3">3- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita soluta asperiores et, quia aperiam necessitatibus facere, inventore repellat quas culpa magnam vitae dicta distinctio quo eum ratione provident consequuntur porro.</p>
+
+<p class = "p4">4- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita soluta asperiores et, quia aperiam necessitatibus facere, inventore repellat quas culpa magnam vitae dicta distinctio quo eum ratione provident consequuntur porro.</p>
+   </div>
+</body>
+</html>
