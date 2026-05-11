@@ -1,0 +1,33 @@
+.cor { /*classe que envolver as caixas coloridas*/
+   background-color: #c64947;
+   width: 20px;
+   height: 20px;
+   border: 1px solid gray;
+   display: inline-block; /*deixalos na mesma linha*/
+   padding: 5px;
+   margin: 7px;
+ }
+
+div {
+width: 50%; /*definindo até onde a 'tabela' vai*/
+padding: 0px;
+}
+
+.azul {background-color: blue;}
+
+.paragrafos {display: grid; /*div criada que envolve os paragrafos*/
+   grid-template-columns: 1fr 1fr; /*colocado para definir o numero de colunas que tera - 2 nesse caso*/
+}
+
+#azul {background-color: #60b4cc ;}
+
+#amarelo {background-color:#eec52d;}
+
+#verde {background-color: #69a84f}
+
+p {border-collapse: collapse;
+   border: 2px solid gray;
+   padding: 25px;
+   margin: 0;}
+
+.quadrados {border:2px solid gray;}
