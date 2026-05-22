@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula topzera</title>
+</head>
+
+<body>
+
+    <h1>Arrays == Vetores == Listas</h1>
+
+    <script>
+
+        let alunos = []; /*declaração de arrays*/
+        console.log(alunos.length);
+        //adicionar diretão os alunos
+        alunos.push("Maria");
+        console.log(alunos.length); //agora tem um aluno e esta imprimindo um no console
+
+        console.log(alunos);
+
+        alunos.push("Amanda");
+        alunos.push("Carolina");
+        alunos.push("Dominique");
+
+        console.log("tamanho:", alunos.length); //vai printar 4, pois tem 4 nomes, mas inicia da posição 0
+        console.log("primeiro(a) aluno(a):", alunos[0]); //mostrando a primeira aluno, pois o indice comeca em 0
+        console.log("ultimo(a) aluno(a):", alunos[alunos.length - 1]); //comeca em zero, entao usamos menos 1 para imprimir o ultimo sempre 
+
+        console.log("primeira aluna", alunos.sort()); //a funcao .sort coloca em ordem alfabetica, todo array em js ja vem com essa funcao
+
+        alunos.pop(); //remove o último
+        console.log(alunos);
+
+        for (let i = 0; i < alunos.length; i++) { //forzao lendario
+            console.log("Posição:", i + 1, alunos[i]); //imprimindo a posicao + 1 para ficar topzeira, e os alunos que estao na posicao do i que esta crescendo
+        }
+
+        //for moderno
+
+        alunos.forEach((aluno, index) => console.log(index + 1, aluno.toUpperCase())); //for each gerencia as posiçoes, facilita o for feito em cima, esse for.each faz automatico
+        //definindo o nome que vai ser puxado dps - funcaozinha top p mndr p caixa alta       
+
+        let nomeBusca = "Carolina"
+        alunos.filter((filtro, index) => { //busca por filtragem
+            if (filtro == "Carolina") { //se o parametro for igual a carolina
+                console.log(filtro, "encontrado na posicao: ", index + 1) //printa isso
+            }
+
+        });
+
+        alunos = alunos.filter(e => e != nomeBusca) //se for diferente do valor que foi atribuido a variavel
+        console.log(alunos) //vai aparecer no console
+
+    </script>
+</body>
+
+</html>
