@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matriculas</title>
 </head>
+
 <body>
-    
+
     <div>
         <h2>Matricular aluno</h2>
-        <input id = "nome" type="text" placeholder="Digite seu nome: " name="nome">
+        <input id="nome" type="text" placeholder="Digite seu nome: " name="nome">
         <button onclick="matricular()">Adicionar</button> <!--chamando a funcao quando clicar no button-->
     </div>
 
@@ -22,39 +24,40 @@
 
     <script>
         let alunos = ["Maria", "Carlos"];
-        function matricular(){
+        function matricular() {
             let nome = document.getElementById("nome").value; //puxando .value do id nome do html, que é a input, e atribuindo variavel p usar embaixo
-            if (nome.trim() != "" && nome.length > 2) { //se o nome for diferente de nada, ele adiciona algo
-            //trim remove espacos em branco - colocamos o nome.length para pegar o numero de caracteres
-            //ou seja, o nome nao pode ser espaco vazio, e tambem tem que ser maior que 2
-            alunos.push(nome); //adiciona no array alunos os nomes que forem inseridos
-            console.log(alunos); //mostrando o value, pois puxamos, e jogando no console
-            exibeAluno(); //chamando a funcao de baixo, que add o nome, para ca para que adicione junto dos nomes definidos na array
+            if (nome.trim() != "" && nome.trim().length > 2) { //se o nome for diferente de nada, ele adiciona algo
+                //trim remove espacos em branco - colocamos o nome.length para pegar o numero de caracteres
+                //ou seja, o nome nao pode ser espaco vazio, e tambem tem que ser maior que 2
+                alunos.push(nome); //adiciona no array alunos os nomes que forem inseridos
+                console.log(alunos); //mostrando o value, pois puxamos, e jogando no console
+                exibeAluno(); //chamando a funcao de baixo, que add o nome, para ca para que adicione junto dos nomes definidos na array
             }
-        
+
             else { //else, alert dizendo pro usuario digitar o nome
-                window.alert ("Digite um nome");
+                window.alert("Digite um nome");
             }
 
         }
-            
-        
-        function exibeAluno(){
+
+
+        function exibeAluno() {
             let lista = document.getElementById("lista"); //definindo variavel para o id lista, que é nosso <ol> no html
             lista.innerHTML = "" //reinicia o conteudo toda vez que clicamos no botao
             alunos.forEach(e => {
-            lista.innerHTML += `<li>${e}</li>`; //colocando o vetor da lista passada, que o usuario vai digitar, e atribuindo textcontent p ele    
+                lista.innerHTML += `<li>${e}</li>`; //colocando o vetor da lista passada, que o usuario vai digitar, e atribuindo textcontent p ele    
             }); //atribuindo uma tag, ao elemento e, que foi o elemento criado no for
             /*` (Crase): Delimita uma Template Literal. Permite misturar texto e variáveis sem usar o sinal de mais (+).
                 <li>: Tag HTML que abre um item de lista (List Item).
                 ${e}: Sintaxe do JavaScript para interpolar (inserir) o valor da variável e (o nome do aluno) dentro do texto.
                 </li>: Tag HTML que fecha o item de lista.
                 ;: Ponto e vírgula. Avisa ao JavaScript que a instrução daquela linha terminou.*/
-            
+
         }
 
         exibeAluno(); //chamando a funcao
 
     </script>
 </body>
+
 </html>
