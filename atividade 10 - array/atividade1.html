@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs</title>
+
+  <style>
+    button {
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dogs</h1>
+
+  <div style="display: flex; flex-direction: column; align-items: start; gap: 10px;">
+
+    <div style="display: flex; flex-direction: row; gap: 10px;">
+      <button onclick="voltar()">←</button>
+      <button onclick="proximo()">→</button>
+    </div>
+    <pre id="source">#/4</pre>
+    <img id="foto1" src="https://images.dog.ceo/breeds/rajapalayam-indian/Rajapalayam-dog.jpg" alt="cachorrofoda">
+
+  </div>
+
+  <script>
+    let dogs = [
+      "https://images.dog.ceo/breeds/rajapalayam-indian/Rajapalayam-dog.jpg",
+      "https://images.dog.ceo/breeds/mountain-swiss/n02107574_819.jpg",
+      "https://images.dog.ceo/breeds/terrier-kerryblue/n02093859_1456.jpg",
+      "https://images.dog.ceo/breeds/german-shepherd/n02106662_6931.jpg"
+    ]
+
+    let indice = 0;
+
+    function proximo() {
+      if (indice == dogs.length - 1) {
+        indice = 0;
+      } else {
+        indice++;
+      }
+
+      foto1.src = dogs[indice];
+      // junta o # com o número e o /4
+      source.innerText = "#" + indice + "/3";
+    }
+
+    function voltar() {
+      if (indice == 0) {
+        indice = dogs.length - 1;
+      } else {
+        indice--;
+      }
+
+      foto1.src = dogs[indice];
+      // mesma coisa, mantém o formato padrão ao voltar
+      source.innerText = "#" + indice + "/3";
+    }
+  </script>
+</body>
+
+</html>
