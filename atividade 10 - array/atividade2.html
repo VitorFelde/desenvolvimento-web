@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo da Media</title>
+
+  <style>
+    h1 {
+      color: navy;
+    }
+
+    span {
+      color: gray;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(3, 100px); /*assim fica 3 colunas, com as labels tendo 2 elementos, que nem o forms*/
+      gap: 20px; /*espacamento entre as colunas*/
+    }
+
+    h1 {
+      grid-column: span 3; /*se nao fica tudo bugado, ocupa as 3 colunas*/
+    }
+
+    div {
+      grid-column: span 3;
+    }
+
+    label {
+      display: grid;
+      grid-template-rows: auto auto; /*tamanho top*/
+      gap: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Calculadora de conceito</h1>
+
+  <label>
+    <span>Nota 1</span>
+    <input type="number" min="0" max="10" id="nota1" onchange="calculodenota()">
+  </label>
+
+  <label>
+    <span>Nota 2</span>
+    <input type="number" min="0" max="10" id="nota2" onchange="calculodenota()">
+  </label>
+
+  <label>
+    <span>Nota 3</span>
+    <input type="number" min="0" max="10" id="nota3" onchange="calculodenota()">
+  </label>
+
+  <div>Conceito</div>
+  <div id="conceito"></div>
+
+  <div>Média</div>
+  <div id="media"></div>
+
+  <script>
+    let mediaFinal = document.querySelector("#media");
+    let conceito = document.querySelector("#conceito");
+
+    function calculodenota() {
+
+      let nota1 = Number(document.getElementById("nota1").value) || 0; //tive que pesquisar para usar esse comando do ou logico
+      let nota2 = Number(document.getElementById("nota2").value) || 0; //atribuindo valores das inputs as variaveis
+      let nota3 = Number(document.getElementById("nota3").value) || 0;
+      let media = (nota1 + nota2 + nota3) / 3; //calculo da media
+
+      mediaFinal.innerText = media.toFixed(2); //tive que pesquisar como deixava so duas casa decimais
+
+      if (media >= 0 && media < 6) {
+        conceito.innerText = "D";
+      } else if (media >= 6 && media < 7.5) { //colocando os conceitos legais
+        conceito.innerText = "C";
+      } else if (media >= 7.5 && media < 9) {
+        conceito.innerText = "B"; //colocando no html o conceito
+      } else {
+        conceito.innerText = "A";
+      }
+    }
+  </script>
+</body>
+
+</html>
